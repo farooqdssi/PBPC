@@ -2,9 +2,9 @@ import { test, expect } from '@playwright/test';
 
 test('Page navigation', async ({ page }) => {
 
-    await page.goto('http://webjms.atimsonline.com:9999/');
+    await page.goto('http://webjms.atimsonline.com:1051/prebook/login/');
     // Wait for login page
-    await page.waitForLoadState('domcontentloaded');
+    // await page.waitForLoadState('domcontentloaded');
 
     // // Enter credentials
     await page.locator('#UserName').fill('dssiadmin');
