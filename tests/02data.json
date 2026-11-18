@@ -1,0 +1,15 @@
+{
+    "users": [
+        {
+            "username": "dssiadmin",
+            "password": "P@ssw0rd!",
+            "expectedResult": "success"
+        },
+        {
+            "username": "FRQ",
+            "password": "P@ssw0rd$",
+            "expectedResult": "invalid"
+        }
+        
+    ]
+}

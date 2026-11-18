@@ -1,15 +1,15 @@
 {
-  "name": "pbpc",
+  "name": "atims-playwright-bdd",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {},
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "description": "ATIMS automation using Playwright and Cucumber",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:status": "cucumber-js features/atims-status.feature",
+    "test:forgot": "cucumber-js features/forgot-password.feature"
+  },
   "devDependencies": {
-    "@playwright/test": "^1.64.1",
-    "@types/node": "^26.6.6"
+    "@cucumber/cucumber": "^13.3.0",
+    "@playwright/test": "latest",
+    "playwright": "^1.65.0"
   }
 }
